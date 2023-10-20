@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Project</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-section">
+            <img class="navbar-logo" src="{{ url_for('static', filename='q2pros.png') }}" alt="Q2Pros">
+            <img class="navbar-logo" src="{{ url_for('static', filename='q2proslogo.png') }}" alt="Q2Pros Logo">        </div>
+        <div class="navbar-buttons">
+            <ul class="navbar-tabs">
+                <li class="navbar-tab"><a href="/About_us">About Us</a></li>
+                <li class="navbar-tab"><a href="/Categories">Categories</a></li>
+                <li class="navbar-tab"><a href="/Log_in">Log In</a></li>
+            </ul>
+            <a href="/Sign_up" class="navbar-button">Sign Up</a>
+        </div>
+    </div>
+    <h1>Hello, Flask World!</h1>
+    <p>This is a simple Flask project.</p>
+</body>
+</html>
